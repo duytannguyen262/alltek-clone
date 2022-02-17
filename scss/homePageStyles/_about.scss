@@ -1,0 +1,44 @@
+.home-about {
+  &_container {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    padding: 0 30px;
+  }
+
+  &_col1 {
+    flex: 3;
+    & img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &_col2 {
+    flex: 7;
+
+    & h2 {
+      font-size: 25px;
+      color: #1c1c1c;
+      font-weight: 400;
+      margin-bottom: 35px;
+    }
+
+    & p {
+      font-size: 14px;
+      color: #1c1c1c;
+      font-weight: 400;
+    }
+  }
+}
+
+//responsive
+@media (max-width: 768px) {
+  .home-about {
+    &_container {
+      flex-direction: column;
+      padding: 30px 30px;
+      gap: 80px;
+    }
+  }
+}

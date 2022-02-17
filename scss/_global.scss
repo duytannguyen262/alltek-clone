@@ -1,0 +1,55 @@
+$poppins: "Poppins", sans-serif;
+$heroFont: "Orbitron", sans-serif;
+$lato: "Lato", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: $lato;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input[type="search"] {
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.current-link {
+  &:before {
+    content: "►";
+    padding-right: 10px;
+    display: inline-block;
+  }
+}
+
+.removelinkdefault {
+  text-decoration: none;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}

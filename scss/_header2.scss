@@ -1,0 +1,138 @@
+.bg-gray {
+  background-color: #1f1f1f;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-welcome {
+    color: #aaaaaa;
+    font-size: 12px;
+    padding: 20px 20px;
+
+    & a {
+      color: #aaaaaa;
+      text-decoration: none;
+      transition: 0.3s;
+
+      &:hover {
+        color: #ca2531;
+      }
+    }
+  }
+
+  &-features {
+    display: flex;
+    padding: 20px 20px;
+    gap: 30px;
+
+    & li {
+      & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        text-decoration: none;
+        color: #aaaaaa;
+        font-size: 12px;
+
+        transition: 0.3s;
+
+        &:hover {
+          color: #ca2531;
+        }
+      }
+    }
+  }
+}
+
+.nav-area2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.nav-secondary {
+  &.menu-child {
+    top: 150px;
+  }
+  &.nav {
+    &-menu {
+      &_item {
+        padding-bottom: 25px;
+        & a,
+        ion-icon {
+          color: #282828;
+        }
+      }
+    }
+  }
+}
+
+.routes {
+  background-color: #f9f9fa;
+  padding: 15px 15px;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+
+    & a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #282828;
+      transition: 0.3s;
+
+      &:hover {
+        color: #ca2531;
+      }
+    }
+    & ion-icon {
+      margin-right: 10px;
+    }
+  }
+}
+
+//responsive--------------------------------------------
+@media (max-width: 1200px) {
+  .account {
+    &-welcome {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &-features {
+      gap: 50px;
+      & li {
+        & a {
+          & ion-icon {
+            font-size: 16px;
+          }
+
+          & div {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 989px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-area2 {
+    justify-content: center;
+  }
+  .mobile-menu_item {
+    display: block;
+  }
+  .mobile-burger {
+    display: block;
+  }
+}

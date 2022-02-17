@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECS SOFTWARE FOR PC – Alltek</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Orbitron:wght@400;500&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/scss/index.css">
+</head>
+
+<body>
+    <div id="body-overlay"></div>
+    <div class="search-modal" id="search-modal">
+        <ion-icon data-close-button class="close-btn" name="close-outline"></ion-icon>
+        <div class="search-group">
+            <input type="search" placeholder="Search..." title="Search for:">
+
+            <button>
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+        </div>
+    </div>
+    <header>
+        <div class="bg-gray">
+            <div class="wrapper">
+                <div class="account">
+                    <div class="mobile-burger hidden">
+                        <button style="background: inherit; color: #aaaaaa" class="mobile-burger_icon"
+                            id="mobile-burger_icon" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false">
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </button>
+                        <div style="left:0px" class="burger-menu_container collapse" id="navbarToggleExternalContent">
+                            <div class="burger-search">
+                                <input type="text" placeholder="Search...">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
+                            <ul class="burger-menu_list">
+                                <li class="burger-menu_item">
+                                    <a href="/index.html">HOME</a>
+                                </li>
+                                <li class="burger-menu_item">
+                                    <div class="burger-menu_title">
+                                        <span>MARITIME</span>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                    <div class="burger-smenu">
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">AMEC</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/maritime/amec/about.html">About
+                                                        AMEC</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/ais-class-a-transponders.html">AIS
+                                                        Class A Transponders</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/ais-class-b-cs-transponders.html">AIS
+                                                        Class B CS Transponders</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/ais-class-b-so-transponders.html">AIS
+                                                        Class B SO Transponders</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/maritime/amec/ais-transponder-with-chart-plotter.html">AIS
+                                                        Transponder with Chart Plotter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/ais-receiver.html">AIS
+                                                        Receiver</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/ais-aton.html">AIS ATON</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/ais-sart.html">AIS SART</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/ais-mob-beacon.html">AIS MOB
+                                                        Beacon</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/ais-portable.html">AIS
+                                                        Portable</a>
+                                                </li>
+                                                <li>
+                                                    <a class="current-link"
+                                                        href="/html/maritime/amec/ecs-software-for-pc.html">ECS
+                                                        Software
+                                                        For PC</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/nmea2000-adaptor.html">NMEA2000
+                                                        Adaptor</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/antenna-splitter.html">Antenna
+                                                        Splitter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/amec/antenna.html">GPS
+                                                        Antenna</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">GLOMEX</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/maritime/glomex/about.html">About GLOMEX</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/glomex/webboat-4g-plus.html">Webboat
+                                                        4G
+                                                        Plus</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/glomex/glomeasy-line.html">Glomeasy
+                                                        Line</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/glomex/glomex-tv-antenna.html">Glomex
+                                                        TV
+                                                        Antenna</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/glomex/promarine.html">Promarine</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/glomex/professional-vhf-antenna.html">Professional
+                                                        VHF Antennas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/glomex/professional-wifi-antennas.html">Professional
+                                                        Wifi Antennas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/glomex/mounts-and-accessories.html">Mounts
+                                                        And Accessories</a>
+                                                </li>
+
+                                            </ul>
+                                            <h4 class="burger-smenu_title">SKYMATE</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/maritime/skymate/skymate.html">SkyMate</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/skymate/commercial-system-overview.html">Commercial
+                                                        System</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/skymate/vms-overview.html">VMS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/maritime/skymate/skymate-support.html">Support</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="burger-menu_item" id="enterprise">
+                                    <div class="burger-menu_title">
+                                        <span>ENTERPRISE</span>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                    <div class="burger-smenu">
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">AUDIO CODES</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/enterprise/audio-codes/about.html">About
+                                                        Enterprise</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/enterprise/audio-codes/audiocodes-one-voice-for-skype-for-business.html">Audiocodes
+                                                        One Voice For Skype For Business</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/enterprise/audio-codes/enterprise-unified-communications-uc.html">Enterprise
+                                                        Unified Communications (UC)</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/enterprise/audio-codes/audiocodes-managed-ip-phone-solution.html">Audiocodes
+                                                        Managed IP Phone Solution</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/enterprise/audio-codes/audiocodes-managed-ip-phone-solution.html">Solutions
+                                                        For Contact Centers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/audio-codes/mobile-voip-solutions.html">Mobile
+                                                        VOIP
+                                                        Solutions</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/enterprise/audio-codes/network-function-virtualization-nfv.html">Network
+                                                        Function Virtualization (NFV)</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/enterprise/audio-codes/solutions-for-service-providers.html">Solutions
+                                                        For Service Providers</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/enterprise/audio-codes/solutions-for-service-providers-sip-trunking.html">Solutions
+                                                        For Service Providers – Sip Trunking</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/enterprise/audio-codes/business-connectivity-for-sip-trunking.html">Business
+                                                        Connectivity For SIP Trunking</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/audio-codes/pstn-migration.html">PSTN
+                                                        Migration</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/enterprise/audio-codes/ucaas-unified-communications-as-a-service.html">UCAAS
+                                                        – Unified Communications As A Service</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">SENNHEISER</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/dw-office.html">DW Office</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/dw-pro-1.html">DW Pro 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/dw-pro-2.html">DW Pro 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/shs-04-sd10-spare.html">SHS 04
+                                                        SD10
+                                                        Spare</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/d-10-series.html">D 10
+                                                        Series</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/d-10-phone.html">D 10 Phone</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/d-10-usb.html">D 10 USB</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/d-10-usb-ml.html">D 10 USB
+                                                        ML</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/mb-pro-ml-series.html">MB Pro
+                                                        ML
+                                                        Series</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/mb-pro-1.html">MB Pro 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/mb-pro-2.html">MB Pro 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/mb-pro-12-uc-ml.html">MB Pro
+                                                        1/2
+                                                        UC
+                                                        ML</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/mb-pro-12-uc.html">MB Pro 1/2
+                                                        UC</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/presence-uc-uc-ml.html">PRESENCE™
+                                                        UC/
+                                                        UC
+                                                        ML</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/enterprise/sennheiser/presence-business.html">PRESENCE™
+                                                        Business</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="burger-menu_item" id="iot">
+                                    <div class="burger-menu_title">
+                                        <span>IOT - INTERNET OF THINGS</span>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                    <div class="burger-smenu iot-smenu">
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">NIETZSCHE ENTERPRISE</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/smart-iot/about-nietzsche-enterprise.html">About
+                                                        Us</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">ZIGBEE SECURITY DETECTOR</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/smart-iot/zigbee-security-detector/motion-pir.html">Motion
+                                                        + PIR</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zigbee-security-detector/door-openclose.html">Door
+                                                        Open/Close</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zigbee-security-detector/glass-vibration.html">Glass
+                                                        Vibration</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zigbee-security-detector/siren.html">Siren</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zigbee-security-detector/panic-remote-control.html">Panic
+                                                        Remote Control</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">ZIGBEE LIFE SAFETY DETECTOR</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zigbee-life-safety-detector/smoke-detector.html">Smoke
+                                                        Detector</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zigbee-life-safety-detector/combustible-gas-detector.html">Combustible
+                                                        Gas Detector</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zigbee-life-safety-detector/air-quality-detector.html">Air
+                                                        Quality Detector</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zigbee-life-safety-detector/carbon-dioxide-co2-detector.html">Carbon
+                                                        Dioxide (CO2) Detector</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zigbee-life-safety-detector/carbon-dioxide-co2-detector.html">Carbon
+                                                        Monoxide (CO) Detector</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zigbee-life-safety-detector/flood-and-water-leakage-detector.html">Flood
+                                                        and Water Leakage Detector</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">ZB TEMPERATURE & HUMIDITY</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/zb-temperature-humidity/outdoor-ip66-grade.html">Outdoor
+                                                        IP66-grade</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/smart-iot/zb-temperature-humidity/data-logger.html">Data
+                                                        Logger</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/smart-iot/zb-temperature-humidity/indoor-use.html">Indoor
+                                                        Use</a>
+                                                </li>
+                                            </ul>
+                                            <h4 class="burger-smenu_title">AUTOMATION</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/automation/zigbee-smart-meter-plug.html">2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/smart-iot/automation/remote-control-panic.html">Remote
+                                                        Control (Panic)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/smart-iot/automation/zigbee-strobe-siren.html">ZigBee
+                                                        Strobe Siren</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/smart-iot/automation/zigbee-pwm-light-dimmer.html">ZigBee
+                                                        PWM
+                                                        Light Dimmer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/smart-iot/automation/zigbee-module.html">ZigBee
+                                                        Module</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/smart-iot/automation/light-curtain-switches.html">Light
+                                                        & Curtain Switches</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">ZIGBEE RANGE EXTENDERS</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/smart-iot/zigbee-range-extenders-zigbee-router.html">ZigBee
+                                                        Router</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">ZIGBEE GATEWAYS</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/smart-iot/zigbee-range-extenders-zigbee-router.html">ZIGBEE
+                                                        Gateway/Coordinator</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">ZIGBEE MODULES</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/smart-iot/zigbee-modules-zigbee-2-4ghz-modules.html">ZIGBEE
+                                                        2.4GHZ MODULES</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">USER INTERFACE</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/smart-iot/user-interface-smart-phone-app.html">Smart
+                                                        Phone APP</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">EVERYNET</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/smart-iot/about-everynet.html">About
+                                                        Us</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">IOT PRODUCTS</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/smart-iot/iot-products/network-gateway-v2.html">Network
+                                                        Gateway v2.0
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/html/smart-iot/iot-products/network-operations-centre.html">Network
+                                                        Operations Centre
+                                                        (NOC)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/smart-iot/iot-products/lorawan-touchtag.html">LoRaWAN
+                                                        TouchTAG</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/smart-iot/iot-products/poc-kit.html">PoC Kit –
+                                                        Straight
+                                                        out of
+                                                        the bag</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="burger-smenu_item">
+                                            <h4 class="burger-smenu_title">IOT SOLUTIONS</h4>
+                                            <ul class="burger-smenu_list">
+                                                <li>
+                                                    <a href="/html/smart-iot/iot-solutions/firmware-over-the-air.html">Firmware-over-the-air
+                                                        (FOTA) upgrade
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/html/smart-iot/iot-solutions/native-geolocation.html">Native
+                                                        Geolocation
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="burger-menu_item">
+                                    <a href="/index.html">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="account-welcome">
+                        Welcome <a href="/index.html">Guest</a> !
+                    </div>
+                    <ul class="account-features">
+                        <li>
+                            <a href="/index.html">
+                                <ion-icon name="person-circle"></ion-icon>
+                                <div>My Account</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.html">
+                                <ion-icon name="heart"></ion-icon>
+                                <div>My Wishlist</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.html">
+                                <ion-icon name="checkmark"></ion-icon>
+                                <div>Checkout</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.html">
+                                <ion-icon name="lock-closed"></ion-icon>
+                                <div>Login</div>
+                            </a>
+                        </li>
+                        <li class="mobile-menu_item hidden">
+                            <a href="#" class="mobile-menu_link mobile-bag">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <span>
+                                    0
+                                </span>
+                            </a>
+                            <div class="menu-cart_hover-modal">
+                                No products in cart
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-secondary">
+            <div class="wrapper">
+                <div class="nav-area2">
+                    <div class="logo">
+                        <a href="/index.html">
+                            <img src="http://www.alltek.sg/wp-content/uploads/2016/06/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="nav-menu">
+                        <ul class="nav-menu_inner nav-secondary">
+                            <li class="nav-menu_item nav-secondary">
+                                <a href="#" class="nav-menu_link nav-secondary active">HOME</a>
+                            </li>
+                            <li class="nav-menu_item nav-secondary">
+                                <a href="#" class="nav-menu_link nav-secondary">MARITIME</a>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                                <div class="menu-child nav-secondary">
+                                    <div class="menu-child_item">
+                                        <h4 class="menu-child_title">AMEC</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/maritime/amec/about.html">About
+                                                    AMEC</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/ais-class-a-transponders.html">AIS
+                                                    Class A Transponders</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/ais-class-b-cs-transponders.html">AIS
+                                                    Class B CS Transponders</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/ais-class-b-so-transponders.html">AIS
+                                                    Class B SO Transponders</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/ais-transponder-with-chart-plotter.html">AIS
+                                                    Transponder with Chart Plotter</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/ais-receiver.html">AIS
+                                                    Receiver</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/ais-aton.html">AIS ATON</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/ais-sart.html">AIS SART</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/ais-mob-beacon.html">AIS MOB
+                                                    Beacon</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/ais-portable.html">AIS
+                                                    Portable</a>
+                                            </li>
+                                            <li>
+                                                <a class="current-link"
+                                                    href="/html/maritime/amec/ecs-software-for-pc.html">ECS
+                                                    Software
+                                                    For PC</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/nmea2000-adaptor.html">NMEA2000
+                                                    Adaptor</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/antenna-splitter.html">Antenna
+                                                    Splitter</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/maritime/amec/antenna.html">GPS Antenna</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-child_item">
+                                        <h4 class="menu-child_title">GLOMEX</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="https://www.alltek.sg/maritime/glomex/">About GLOMEX</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.alltek.sg/maritime/glomex/webboat-4g-plus/">Webboat
+                                                    4G
+                                                    Plus</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.alltek.sg/maritime/glomex/glomeasy-line/">Glomeasy
+                                                    Line</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.alltek.sg/maritime/glomex/glomex-tv-antenna/">Glomex
+                                                    TV
+                                                    Antenna</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.alltek.sg/maritime/glomex/promarine/">Promarine</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.alltek.sg/maritime/glomex/professional-vhf-antenna/">Professional
+                                                    VHF Antennas</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.alltek.sg/maritime/glomex/professional-wifi-antennas/">Professional
+                                                    Wifi Antennas</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.alltek.sg/maritime/glomex/mounts-and-accessories/">Mounts
+                                                    And Accessories</a>
+                                            </li>
+
+                                        </ul>
+                                        <h4 class="menu-child_title">SKYMATE</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="https://www.alltek.sg/maritime/skymate/">SkyMate</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.alltek.sg/maritime/skymate/commercial-system-overview/">Commercial
+                                                    System</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.alltek.sg/maritime/skymate/vms-overview/">VMS</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.alltek.sg/maritime/skymate-support/">Support</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-menu_item nav-secondary">
+                                <a href="#" class="nav-menu_link nav-secondary">ENTERPRISE</a>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                                <div class="menu-child nav-secondary">
+                                    <div class="menu-child_item">
+                                        <h4 class="menu-child_title">AUDIO CODES</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/enterprise/audio-codes/about.html">About Enterprise</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/audio-codes/about.html">Audiocodes
+                                                    One Voice For Skype For Business</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/enterprise/audio-codes/enterprise-unified-communications-uc.html">Enterprise
+                                                    Unified Communications (UC)</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/enterprise/audio-codes/audiocodes-managed-ip-phone-solution.html">Audiocodes
+                                                    Managed IP Phone Solution</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/enterprise/audio-codes/solutions-for-contact-centers.html">Solutions
+                                                    For Contact Centers</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/audio-codes/mobile-voip-solutions.html">Mobile
+                                                    VOIP
+                                                    Solutions</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/enterprise/audio-codes/network-function-virtualization-nfv.html">Network
+                                                    Function Virtualization (NFV)</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/enterprise/audio-codes/solutions-for-service-providers.html">Solutions
+                                                    For Service Providers</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/enterprise/audio-codes/solutions-for-service-providers-sip-trunking.html">Solutions
+                                                    For Service Providers – Sip Trunking</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/enterprise/audio-codes/business-connectivity-for-sip-trunking.html">Business
+                                                    Connectivity For SIP Trunking</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/audio-codes/pstn-migration.html">PSTN
+                                                    Migration</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/enterprise/audio-codes/ucaas-unified-communications-as-a-service.html">UCAAS
+                                                    – Unified Communications As A Service</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-child_item">
+                                        <h4 class="menu-child_title">SENNHEISER</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/dw-office.html">DW Office</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/dw-pro-1.html">DW Pro 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/dw-pro-2.html">DW Pro 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/shs-04-sd10-spare.html">SHS 04 SD10
+                                                    Spare</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/d-10-series.html">D 10 Series</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/d-10-phone.html">D 10 Phone</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/d-10-usb.html">D 10 USB</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/d-10-usb-ml.html">D 10 USB ML</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/mb-pro-ml-series.html">MB Pro ML
+                                                    Series</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/mb-pro-1.html">MB Pro 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/mb-pro-2.html">MB Pro 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/mb-pro-12-uc-ml.html">MB Pro 1/2 UC
+                                                    ML</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/mb-pro-12-uc.html">MB Pro 1/2
+                                                    UC</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/presence-uc-uc-ml.html">PRESENCE™
+                                                    UC/ UC
+                                                    ML</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/enterprise/sennheiser/presence-business.html">PRESENCE™
+                                                    Business</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-menu_item nav-secondary">
+                                <a href="#" class="nav-menu_link nav-secondary">IOT - INTERNET OF THINGS</a>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                                <div class="menu-child nav-secondary">
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">Nietzsche Enterprise</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/smart-iot/about-nietzsche-enterprise.html">About
+                                                    Us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">ZigBee Security Detector</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/smart-iot/zigbee-security-detector/motion-pir.html">Motion
+                                                    + PIR</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/zigbee-security-detector/door-openclose.html">Door
+                                                    Open/Close</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/zigbee-security-detector/glass-vibration.html">Glass
+                                                    Vibration</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/zigbee-security-detector/siren.html">Siren</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/smart-iot/zigbee-security-detector/panic-remote-control.html">Panic
+                                                    Remote Control</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">ZigBee Life Safety Detector</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a
+                                                    href="/html/smart-iot/zigbee-life-safety-detector/smoke-detector.html">Smoke
+                                                    Detector</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/smart-iot/zigbee-life-safety-detector/combustible-gas-detector.html">Combustible
+                                                    Gas Detector</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/smart-iot/zigbee-life-safety-detector/air-quality-detector.html">Air
+                                                    Quality Detector</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/smart-iot/zigbee-life-safety-detector/carbon-dioxide-co2-detector.html">Carbon
+                                                    Dioxide (CO2) Detector</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/smart-iot/zigbee-life-safety-detector/carbon-monoxide-c0-detector.html">Carbon
+                                                    Monoxide (CO) Detector</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/html/smart-iot/zigbee-life-safety-detector/flood-and-water-leakage-detector.html">Flood
+                                                    and Water Leakage Detector</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">ZB Temperature & Humidity</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a
+                                                    href="/html/smart-iot/zb-temperature-humidity/outdoor-ip66-grade.html">Outdoor
+                                                    IP66-grade</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/zb-temperature-humidity/data-logger.html">Data
+                                                    Logger</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/zb-temperature-humidity/indoor-use.html">Indoor
+                                                    Use</a>
+                                            </li>
+                                        </ul>
+                                        <h4 class="menu-child_title">Automation</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/smart-iot/automation/zigbee-smart-meter-plug.html">2</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/automation/remote-control-panic.html">Remote
+                                                    Control (Panic)</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/automation/zigbee-strobe-siren.html">ZigBee
+                                                    Strobe Siren</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/automation/light-dimmer.html">ZigBee PWM
+                                                    Light Dimmer</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/automation/zigbee-module.html">ZigBee
+                                                    Module</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/automation/light-curtain-switches.html">Light
+                                                    & Curtain Switches</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">ZIGBEE RANGE EXTENDERS</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/smart-iot/zigbee-range-extenders-zigbee-router.html">
+                                                    ZigBee Router</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">ZIGBEE GATEWAYS</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a
+                                                    href="/html/smart-iot/zigbee-gateways-zigbee-gatewaycoordinator.html">
+                                                    ZigBee Gateway/Coordinator</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">ZIGBEE MODULES</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/smart-iot/zigbee-modules-zigbee-2-4ghz-modules.html">ZigBee
+                                                    2.4GHz modules </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">USER INTERFACE</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/smart-iot/user-interface-smart-phone-app.html">
+                                                    Smart Phone APP</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">EVERYNET</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/smart-iot/about-everynet.html">
+                                                    ABOUT US</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">IOT PRODUCTS</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/smart-iot/iot-products/network-gateway-v2.html">Network
+                                                    Gateway
+                                                    v2.0</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/iot-products/network-operations-centre.html">Network
+                                                    Operations Centre (NOC)</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/iot-products/lorawan-touchtag.html">LoRaWAN
+                                                    TouchTAG</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/iot-products/poc-kit.html">PoC Kit – Straight
+                                                    out of
+                                                    the bag</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div style="width: 25%" class="menu-child_item">
+                                        <h4 class="menu-child_title">IOT SOLUTIONS</h4>
+                                        <ul class="menu-child_list">
+                                            <li>
+                                                <a href="/html/smart-iot/iot-solutions/firmware-over-the-air.html">Firmware-over-the-air
+                                                    (FOTA) upgrade</a>
+                                            </li>
+                                            <li>
+                                                <a href="/html/smart-iot/iot-solutions/native-geolocation.html">Native
+                                                    Geolocation</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-menu_item nav-secondary">
+                                <a href="#" class="nav-menu_link nav-secondary">CONTACT US</a>
+                            </li>
+                            <li class="nav-menu_item nav-secondary">
+                                <a data-modal-target="#search-modal" href="#" class="nav-menu_link nav-secondary-icon">
+                                    <ion-icon name="search"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="nav-menu_item nav-secondary menu-cart">
+                                <a href="#" class="nav-menu_link-icon nav-secondary">
+                                    <ion-icon name="bag-handle-outline"></ion-icon>
+                                    <span>
+                                        0
+                                    </span>
+                                </a>
+                                <div class="menu-cart_hover-modal">
+                                    No products in cart
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="routes">
+            <div class="wrapper">
+                <div class="routes-content">
+                    <a href="/index.html">Home</a>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                    <a href="/index.html">MARITIME</a>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                    <a href="/html/maritime/amec/about.html">AMEC</a>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                    <a class="active" href="/html/maritime/amec/ecs-software-for-pc.html">ECS Software For PC</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="https://www.alltek.sg/wp-content/uploads/2016/06/inner-marine.jpg" alt="">
+    </section>
+
+    <section>
+        <div class="wrapper">
+            <div class="page-content">
+                <div class="page-content_header">
+                    <h1>
+                        AMEC
+                    </h1>
+                    <ul class="page-content_header--list">
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/about.html">About AMEC</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/ais-class-a-transponders.html">AIS Class A Transponders</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/ais-class-b-cs-transponders.html">AIS Class B CS
+                                Transponders</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/ais-class-b-so-transponders.html">AIS Class B SO
+                                Transponders</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/ais-transponder-with-chart-plotter.html">AIS Transponder with
+                                Chart Plotter</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/ais-receiver.html">AIS Receiver</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/ais-aton.html">AIS ATON</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/ais-sart.html">AIS SART</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/ais-mob-beacon.html">AIS MOB Beacon</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/ais-portable.html">AIS Portable</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a class="active current-link" href="/html/maritime/amec/ecs-software-for-pc.html">ECS
+                                Software For PC</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/nmea2000-adaptor.html">NMEA2000 Adaptor</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/antenna-splitter.html">Antenna Splitter</a>
+                        </li>
+                        <li class="page-content_header--link">
+                            <a href="/html/maritime/amec/antenna.html">GPS Antenna</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-content_detail">
+                    <div class="page-content_product--list">
+                        <div class="page-content_product">
+                            <a href="/index.html" class="removelinkdefault">
+                                <div class="page-content_product--img">
+                                    <img class="product-single_img"
+                                        src="https://www.alltek.sg/wp-content/uploads/2016/07/product1207065121172092.jpg"
+                                        alt="">
+                                </div>
+                                <h3 class="page-content_product--name">
+                                    NaviPro ECS
+                                </h3>
+                                <span class="product-quickview">Quick View</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <div class="wrapper">
+                <div class="footer-info_container">
+                    <div class="footer-info_col1 footer-col">
+                        <img src="http://www.alltek.sg/wp-content/uploads/2016/07/logo-light.png" alt="">
+                        <a href="http://www.facebook.com/alltek.sg" target="_blank" title="ion-social-facebook"
+                            class="ion-social-facebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/company/alltek-technology-singapore" target="_blank"
+                            title="ion-social-linkedin" class="ion-social-linkedin">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <p>*ALL PRICES exclude GST and installation.</p>
+                        <p>
+                            *All Prices are in USD.
+                        </p>
+                    </div>
+                    <div class="footer-info_col2 footer-col">
+                        <h2 class="footer-info_heading">CONTACT US</h2>
+                        <p>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            8 Boon Lay Way, #08-10,
+                            8 @ Tradehub 21, Singapore 609964
+                        </p>
+                        <p>
+                            <ion-icon name="phone-portrait"></ion-icon>
+                            +65 6425 0088
+                        </p>
+                        <p>
+                            <ion-icon name="newspaper"></ion-icon>
+                            +65 6425 0328
+                        </p>
+                        <p>
+                            <ion-icon name="mail"></ion-icon>
+                            <a href="mailto:sales@alltek.sg">sales@alltek.sg</a>
+                        </p>
+                    </div>
+                    <div class="footer-info_col3 footer-col">
+                        <h2 class="footer-info_heading">USEFUL LINKS</h2>
+                        <ul class="footer-list">
+                            <li class="footer-link">
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li class="footer-link current-footer_link">
+                                <a href="/index.html">Maritime</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="/index.html">Enterprise</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="/index.html">Smart IOT</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="/index.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-info_col4 footer-col">
+                        <h2 class="footer-info_heading">
+                            SUBSCRIBE LATEST
+                        </h2>
+                        <input type="text" placeholder="Your email address">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="wrapper">
+                <span>
+                    Copyright @ 20015 - 2016 Wordpress Themes by <a href="http://www.zootemplate.com">ZooTemplate</a>.
+                    All
+                    rights reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scrollTop" id="scroll-top" onClick="scrollToTop();">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/index.js"></script>
+</body>
+
+</html>

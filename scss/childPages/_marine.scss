@@ -1,0 +1,22 @@
+.marine {
+  &-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  &-link {
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .marine {
+    &-links {
+      flex-direction: column;
+    }
+
+    &-link {
+      width: 100%;
+    }
+  }
+}

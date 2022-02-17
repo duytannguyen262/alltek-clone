@@ -1,0 +1,181 @@
+.footer-info {
+  background-color: #0c2c44;
+
+  &_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &_col1 {
+    & img {
+      width: 79px;
+      height: 67px;
+      display: block;
+    }
+
+    & a ion-icon {
+      color: white;
+      width: 30px;
+      height: 30px;
+      margin-top: 30px;
+      transition: 0.4s;
+
+      &:hover {
+        color: #337ab7;
+      }
+    }
+
+    & p {
+      color: #ffd200;
+      font-size: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  &_col2 {
+    color: white;
+    font-size: 14px;
+
+    & p {
+      margin-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #1f4a76;
+      & a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  &_col4 {
+    & input {
+      display: block;
+      margin-top: 10px;
+      height: 36px;
+      padding-left: 10px;
+    }
+
+    & button {
+      height: 36px;
+      padding: 0 10px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  }
+
+  &_heading {
+    font-size: 16px;
+    color: white;
+  }
+}
+.footer {
+  &-col {
+    width: calc(25% - 50px);
+  }
+
+  &-list {
+    list-style-type: none;
+    margin-top: 10px;
+    color: white;
+  }
+
+  &-link {
+    & a {
+      text-decoration: none;
+      color: white;
+
+      display: block;
+      font-size: 14px;
+      line-height: 24px;
+
+      padding: 10px 0px;
+      border-bottom: 1px solid #1f4a76;
+
+      transition: all 0.2s linear;
+
+      &:hover {
+        color: #ca2531;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-copyright {
+    background-color: #1d2023;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+
+    & div span {
+      line-height: 32px;
+      color: white;
+      font-size: 11px;
+
+      & a {
+        text-decoration: none;
+        color: #ca2531;
+      }
+    }
+  }
+}
+
+.current-footer_link {
+  :before {
+    content: "►";
+    padding-right: 10px;
+    display: inline-block;
+  }
+}
+
+//responsive
+@media (max-width: 768px) {
+  .footer-info {
+    &_container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px 20px;
+    }
+
+    &_col1 {
+      & a ion-icon {
+        margin-top: 20px;
+      }
+
+      & p {
+        margin-top: 20px;
+      }
+    }
+
+    &_col2 {
+      & p {
+        margin-top: 20px;
+      }
+    }
+
+    &_col4 {
+      & input {
+        display: inline-block;
+      }
+    }
+  }
+
+  .footer {
+    &-col {
+      width: 100%;
+    }
+
+    &-list {
+      margin-top: 20px;
+    }
+
+    &-link {
+      & a {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+}
